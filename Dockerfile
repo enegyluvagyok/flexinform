@@ -23,6 +23,4 @@ RUN php artisan config:cache && \
     php artisan storage:link && \
     chown -R www-data:www-data /var/www/html/ && \
     chmod 777 -R /var/www/html/ && \
-    a2enmod rewrite && \
-	composer install && \
-	php artisan migrate
+    a2enmod rewrite
